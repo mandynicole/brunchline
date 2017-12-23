@@ -1,0 +1,29 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  line-height: 1.2;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  &::-webkit-scrollbar {
+    appearance: none;
+    background: transparent;
+    position: absolute;
+    width: 15px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: mix($gray, $black);
+  }
+
+  &::-webkit-scrollbar-track {
+    border: 0;
+    background: $black;
+  }
+}

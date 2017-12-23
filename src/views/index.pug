@@ -1,0 +1,15 @@
+extends templates/_layout
+
+block vars
+  - var title = "Flow"
+  - var bodyClass = "flow"
+  
+block header
+  include components/_header
+
+block content
+  .content
+    include pages/_flow
+    
+block footer
+  include components/_footer

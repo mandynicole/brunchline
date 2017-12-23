@@ -1,0 +1,11 @@
+// Intentionally Explicit
+@import "core/palette";
+@import "core/ua";
+@import "core/type";
+@import "core/animations";
+@import "core/layouts";
+
+// Glob Away
+@import "mixins/*";
+@import "components/*";
+@import "pages/*";
