@@ -1,17 +1,71 @@
-# Brunch app
+# Brunch Line
 
-This is a HTML5 application, built with [Brunch](http://brunch.io).
+### Brunch Line is built with [Brunch](http://brunch.io), and prefers utilizing [Yarn](https://yarnpkg.com/) over NPM.
 
-## Getting started
-* Install (if you don't have them):
-    * [Node.js](http://nodejs.org): `brew install node` on OS X
-    * [Brunch](http://brunch.io): `npm install -g brunch`
-    * Brunch plugins and app dependencies: `npm install`
-* Run:
-    * `npm start` — watches the project with continuous rebuild. This will also launch HTTP server with [pushState](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Manipulating_the_browser_history).
-    * `npm run build` — builds minified project for production
-* Learn:
-    * `public/` dir is fully auto-generated and served by HTTP server.  Write your code in `app/` dir.
-    * Place static files you want to be copied from `app/assets/` to `public/`.
-    * [Brunch site](http://brunch.io), [Getting started guide](https://github.com/brunch/brunch-guide#readme)
-# brunch-with-pug-scss
+## Features
+
+- [SCSS](http://sass-lang.com/)
+  - [PostCSS](http://postcss.org/)
+    - [autoprefixer](https://github.com/postcss/autoprefixer)
+    - [cssnano](http://cssnano.co/)
+    - [postcss-scss](https://github.com/postcss/postcss-scss)
+- [Pug](https://pugjs.org)
+- `src/` instead of `app/`
+  - `assets/[img|vid|svg|*]` throws everything straight into `dist/[img|vid|svg|*]`
+    - **TODO:** Pipe various filetypes through respective optimizers, etc.
+- `dist/` instead of `public/`
+
+---
+
+## Installation
+
+### [Node.js](http://nodejs.org):
+
+  > #### macOS
+  > - [Homebrew](https://brew.sh/): `brew install node`
+  > - Manual: [Download](https://nodejs.org/en/download/) the `.pkg`
+
+
+  > #### Windows
+  > - [Choco](https://chocolatey.org/): `choco install node`
+  > - Manual: [Download](https://nodejs.org/en/download/) the `.msi`
+
+
+  > #### Linux
+  > - [Linuxbrew](http://linuxbrew.sh/): `brew install node`
+  > - Manual: 
+  >   - (If 16.04 or below:) `curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -`
+  >   - `sudo apt-get install -y nodejs`
+  >   - `sudo apt-get install -y build-essential`
+
+
+---
+
+
+### [Yarn](https://yarnpkg.com/):
+
+  > **macOS**
+  >  - `brew install yarn` 
+  > - .. or `brew install yarn --without-node` if using a Node Version Manager
+  
+  > **Windows**
+  > - [Download](https://yarnpkg.com/latest.msi) the `.msi`
+  > - [Choco](https://chocolatey.org/): `choco install yarn`
+	
+  > **Linux (Ubuntu/Debian)** (See [this page](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions) for other distros)
+  > - `curl -o- -L https://yarnpkg.com/install.sh | bash
+/etc/apt/sources.list.d/yarn.list`
+
+
+---
+
+
+### [Brunch](http://brunch.io)
+- `yarn install -g brunch`
+- Install plugins & dependencies: `yarn install`
+
+---
+
+## Run
+- `yarn run start` — watches the project with continuous rebuild using `brunch-auto-reload`. This will also launch HTTP server with [pushState](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Manipulating_the_browser_history).
+- `yarn run build` — builds minified project for production
