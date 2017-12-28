@@ -1,6 +1,5 @@
 # Brunch Line
-
-### Brunch Line is built with [Brunch](http://brunch.io), and prefers utilizing [Yarn](https://yarnpkg.com/) over NPM.
+#### Brunch Line is built with [Brunch](http://brunch.io), and prefers utilizing [Yarn](https://yarnpkg.com/) over NPM.
 
 ## Features
 
@@ -15,6 +14,32 @@
     - **TODO:** Pipe various filetypes through respective optimizers, etc.
 - `dist/` instead of `public/`
 
+#### Example Directory Structure
+```
+Project/
+├── src/
+│   ├── assets/
+|   |   └── img/
+|   |       └── filename.png
+|   ├── js/
+|       └── initialize.js
+|   ├── scss/
+|   |   └── base.scss             [imports partials defined in each subfolder]
+|   |   └── vendor.scss           [imports vendor CSS, in this case, just normalize.css]
+|   |   └── core/
+|   |   └── components/
+|   |   └── pages/
+| 
+├── dist
+│   ├── css/
+|   |   └── app.css               [vendor.scss + base.scss]
+|   ├── img/
+|       └── filename.png
+|   ├── js/
+|       └── app.js                [initialize.js + other JS]
+|   └── index.html
+```
+
 ---
 
 ## Installation
@@ -23,17 +48,17 @@
 
   > #### macOS
   > - [Homebrew](https://brew.sh/): `brew install node`
-  > - Manual: [Download](https://nodejs.org/en/download/) the `.pkg`
+  > - Manually: [Download](https://nodejs.org/en/download/) the `.pkg`
 
 
   > #### Windows
   > - [Choco](https://chocolatey.org/): `choco install node`
-  > - Manual: [Download](https://nodejs.org/en/download/) the `.msi`
+  > - Manually: [Download](https://nodejs.org/en/download/) the `.msi`
 
 
   > #### Linux
   > - [Linuxbrew](http://linuxbrew.sh/): `brew install node`
-  > - Manual: 
+  > - Manually: 
   >   - (If 16.04 or below:) `curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -`
   >   - `sudo apt-get install -y nodejs`
   >   - `sudo apt-get install -y build-essential`
@@ -45,8 +70,8 @@
 ### [Yarn](https://yarnpkg.com/):
 
   > **macOS**
-  >  - `brew install yarn` 
-  > - .. or `brew install yarn --without-node` if using a Node Version Manager
+  > - `brew install yarn` 
+  > - (if using a Node Version Manager) `brew install yarn --without-node`
   
   > **Windows**
   > - [Download](https://yarnpkg.com/latest.msi) the `.msi`
@@ -61,8 +86,8 @@
 
 
 ### [Brunch](http://brunch.io)
-- `yarn install -g brunch`
-- Install plugins & dependencies: `yarn install`
+1. `yarn global add brunch` — Installs Brunch Globally
+2. `yarn install` — Installs project plugins & dependencies as defined in `package.json`
 
 ---
 
