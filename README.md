@@ -24,15 +24,14 @@ Project/
 |   ├── js/
 |       └── initialize.js
 |   ├── scss/
-|   |   └── base.scss             [imports partials defined in each subfolder]
-|   |   └── vendor.scss           [imports vendor CSS, in this case, just normalize.css]
-|   |   └── core/
-|   |   └── components/
-|   |   └── pages/
-| 
+|   |   ├── base.scss             [imports partials defined in each subfolder]
+|   |   ├── vendor.scss           [imports vendor CSS, in this case, just normalize.css]
+|   |   ├── core/
+|   |   ├── components/
+|   |   └── pages/   
 ├── dist
 │   ├── css/
-|   |   └── app.css               [vendor.scss + base.scss]
+|       └── app.css               [vendor.scss + base.scss]
 |   ├── img/
 |       └── filename.png
 |   ├── js/
