@@ -88,7 +88,7 @@ Project/
 ### [Brunch](http://brunch.io)
 
 1. `yarn global add brunch` — Installs Brunch Globally
-2. `yarn install` — Installs project plugins & dependencies as defined in `package.json`. **Note:** Yarn will technically handle installing any dependencies whenever you run a task, but won't show any convenient visuals in the CLI.
+2. `yarn install` — Installs project plugins & dependencies as defined in `package.json`.
 
 ---
 
