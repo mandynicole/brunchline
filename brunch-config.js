@@ -1,4 +1,3 @@
-// See http://brunch.io for documentation.
 exports.files = {
   javascripts: { joinTo: "js/app.js" },
   stylesheets: {
@@ -41,7 +40,6 @@ exports.plugins = {
       require("cssnano")
     ],
     options: {
-      // NOTE: Does not parse SCSS, just makes PostCSS plugins Sass-friendly
       parser: require("postcss-scss")
     }
   }
