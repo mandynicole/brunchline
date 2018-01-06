@@ -1,5 +1,24 @@
-$white: #fff;
-$black: #131313;
-$gray: #858585;
+$white: hsl(0, 0%, 99%);
+$gray-l: hsl(0, 0%, 75%);
+$gray: hsl(0, 0%, 60%);
+$gray-d: hsl(0, 0%, 30%);
+$black: hsl(0, 0%, 12%);
 
-$red: red;
+$red: hsl(2, 68%, 39%);
+$orange: hsl(13, 74%, 50%);
+$marigold: hsl(32, 86%, 56%);
+$yellow: hsl(45, 100%, 54%);
+$lime: hsl(76, 74%, 47%);
+$green: hsl(112, 60%, 44%);
+$teal: hsl(151, 65%, 42%);
+$cyan: hsl(172, 89%, 32%);
+$sea: hsl(192, 69%, 29%);
+$blue: hsl(212, 100%, 33%);
+$purple: hsl(229, 35%, 32%);
+$violet: hsl(304, 41%, 30%);
+$pink: hsl(333, 69%, 55%);
+
+$link: $blue;
+
+$theme-primary: $white;
+$theme-secondary: $blue;

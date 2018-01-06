@@ -1,0 +1,14 @@
+@mixin grid() {
+  display: grid;
+}
+
+@mixin flex-grid($n: 3, $g: 15px) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  > * {
+    margin-bottom: $g * 2;
+    width: calc(100% / #{$n} - #{$g} * (#{$n} - 1));
+  }
+}

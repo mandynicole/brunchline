@@ -1,0 +1,20 @@
+[id="features"] {
+  // background-size: 300%;
+  color: $white;
+
+  ul.features {
+    @include flex-grid();
+    @include list-reset();
+
+    * {
+      line-height: 1.5;
+    }
+
+    a {
+      color: $yellow;
+    }
+
+    li {
+    }
+  }
+}

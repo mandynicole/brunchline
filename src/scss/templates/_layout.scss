@@ -1,0 +1,28 @@
+header {
+  padding: 0 6%;
+}
+
+.content > *,
+footer {
+  padding: 6%;
+}
+
+.content {
+  section {
+    h2 {
+      font-size: 0.9rem;
+      font-weight: 400;
+      letter-spacing: 0.3rem;
+      margin-bottom: 45px;
+      text-transform: uppercase;
+    }
+  }
+  main {
+  }
+
+  aside {
+  }
+}
+
+footer {
+}

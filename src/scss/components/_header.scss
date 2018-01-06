@@ -1,11 +1,54 @@
-header.primary {
-  background: $black;
+$header-h: 150px;
 
+header.primary {
+  background: linear-gradient($theme-secondary 96%, transparent);
+  height: $header-h;
   display: flex;
   align-items: center;
+  position: fixed;
+  width: 100%;
 
-  h1 {
-    color: $white;
-    font-size: 1.2rem;
+  + .content {
+    padding-top: $header-h;
   }
+
+  &::after {
+    content: "";
+    border-bottom: 12px dotted fade-out($theme-primary, 0.8);
+    position: absolute;
+    left: 45px;
+    right: 45px;
+    bottom: 0;
+    z-index: 0;
+  }
+
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+
+  ul.nav {
+    @include list-reset();
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 100%;
+
+    li {
+      font-size: 0.99rem;
+      font-weight: 400;
+      margin-left: 45px;
+      text-align: right;
+    }
+
+    h1 {
+      color: $white;
+      font-size: 1.2rem;
+    }
+  }
+  // @media screen and (max-width: 500px) {
+  // ul.nav li {
+  // width: 100%;
+  // }
+  // }
 }

@@ -1,0 +1,31 @@
+section#features
+  h2 Features
+  
+  ul.features
+    li
+      h3 #[a(href="http://brunch.io/") Brunch] 
+      p We're using #[a(href="http://brunch.io/") Brunch] to mitigate the pains of typical front-end build tools and task runners. You can #[a(href="http://brunch.io/docs/why-brunch") read about what that means], but essentially: smaller configs &amp; quicker build times. 
+
+    li
+      h3 #[a(href="http://yarnpkg.com/") Yarn]
+      p Brunch prefers #[a(href="http://yarnpkg.com/") Yarn] for package management as it's smarter &amp; faster than using NPM. If you're making the switch, #[a(href="https://yarnpkg.com/en/docs/migrating-from-npm#toc-cli-commands-comparison") this command comparison list] is very useful.
+    
+    li
+      h3 #[a(href="https://pugjs.org/") Pug]
+      p Pug (formerly Jade) is a templating engine that allows us to write cleaner, intelligent, and modular HTML. 
+      
+    li
+      h3 #[a(href="http://sass-lang.com/") SCSS] + #[a(href="http://postcss.org/") PostCSS]
+      p We haven't yet made the switch to PostCSS entirely, so we're using LibSass CSS compilation while PostCSS gives us #[code autoprefixer] for vendor prefixing, #[code cssnano] for minification, and #[code postcss-scss] for ensuring each plugin can parse SCSS.
+      
+    li
+      h3 #[a(href="https://github.com/necolas/normalize.css") Normalize.css]
+      p The essential user-agent normalizer.
+      
+    li 
+      h3 Mixins, Typography, Palette
+      p Includes helpful defaults and mixins for styling.
+
+    li
+      h3 Clean Directory Structure
+      p Deviates from Brunch's default structure by removing the #[code app/] folder.
