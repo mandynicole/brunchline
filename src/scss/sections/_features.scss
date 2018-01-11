@@ -1,5 +1,8 @@
 [id="features"] {
-  // background-size: 300%;
+  background: linear-gradient(transparent, $theme-secondary, $yellow);
+  background-blend-mode: multiply;
+  mix-blend-mode: multiply;
+  background-size: 300%;
   color: $white;
 
   ul.features {
@@ -11,7 +14,12 @@
     }
 
     a {
-      color: $yellow;
+      color: $white;
+      text-decoration-color: $yellow;
+
+      &:hover {
+        color: $yellow;
+      }
     }
 
     li {

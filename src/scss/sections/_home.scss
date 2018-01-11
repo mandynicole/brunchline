@@ -1,0 +1,30 @@
+body.home {
+  // background: linear-gradient($theme-secondary, $purple);
+  background-attachment: fixed;
+  mix-blend-mode: screen;
+
+  .bg {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .content {
+    padding-top: $header-h;
+
+    section {
+      h2 {
+        font-size: 0.9rem;
+        font-weight: 400;
+        letter-spacing: 0.3rem;
+        margin-bottom: 45px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
