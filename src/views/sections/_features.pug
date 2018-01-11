@@ -12,11 +12,11 @@ section#features
     
     li
       h3 #[a(href="https://pugjs.org/") Pug]
-      p Pug (formerly Jade) is a templating engine that allows us to write cleaner, intelligent, and modular HTML. 
+      p Pug (formerly Jade) is a templating engine that allows us to write clean, intelligent, modular HTML (and a lot of other cool stuff if you're so inclined). 
       
     li
-      h3 #[a(href="http://sass-lang.com/") SCSS] + #[a(href="http://postcss.org/") PostCSS]
-      p We haven't yet made the switch to PostCSS entirely, so we're using LibSass CSS compilation while PostCSS gives us #[code autoprefixer] for vendor prefixing, #[code cssnano] for minification, and #[code postcss-scss] for ensuring each plugin can parse SCSS.
+      h3 #[a(href="http://sass-lang.com/") Sass] + #[a(href="http://postcss.org/") PostCSS]
+      p LibSass with PostCSS' #[code autoprefixer] for vendor prefixing, #[code cssnano] for minification, and #[code cssnext] for futureproofing.
       
     li
       h3 #[a(href="https://github.com/necolas/normalize.css") Normalize.css]
@@ -27,5 +27,5 @@ section#features
       p Includes helpful defaults and mixins for styling.
 
     li
-      h3 Clean Directory Structure
-      p Deviates from Brunch's default structure by removing the #[code app/] folder.
+      h3 Concise Directory
+      p Deviates from Brunch's default structure by removing the #[code app/] folder and having #[code src/] and #[code dist/] (renamed from #[code public/]) at the top level.

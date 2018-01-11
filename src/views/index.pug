@@ -1,16 +1,21 @@
-extends templates/_layout
+extends templates/_default
 
 block vars
   - var pageTitle = "Brunch w/Pug + SCSS"
-  - var bodyClass = "bodyClass"
+  - var bodyClass = "home"
   
 block header
   include components/_header
 
 block content
+  
   .content
     include sections/_intro
     include sections/_features
+    include sections/_roadmap
+  
+  .bg
+    include svg/brunchline-line-3.svg
     
 block footer
   include components/_footer
