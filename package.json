@@ -15,11 +15,14 @@
     "autoprefixer": "^7.2.1",
     "brunch": "^2",
     "cssnano": "^3.10.0",
+    "cssnext": "^1.8.4",
+    "modularscale-sass": "^3.0.4",
     "normalize.css": "^7.0.0",
     "postcss-brunch": "^2.1.0",
     "postcss-scss": "^1.0.2",
     "pugjs-brunch": "aMarCruz/pugjs-brunch",
     "sass-brunch": "brunch/sass-brunch",
+    "stickybits": "^2.0.13",
     "uglify-js-brunch": "^2"
   }
 }
