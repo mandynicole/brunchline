@@ -1,5 +1,13 @@
 exports.files = {
-  javascripts: { joinTo: "js/app.js" },
+  javascripts: {
+    joinTo: {
+      "js/app.js": /^src/,
+      "js/vendor.js": /^(?!src\/)/
+    },
+    order: {
+      after: ["src/js/initialize.js", "src/js/app.js"]
+    }
+  },
   stylesheets: {
     joinTo: "css/app.css",
     order: {
@@ -7,14 +15,13 @@ exports.files = {
       after: ["src/scss/base.scss"]
     }
   }
+  // templates: {
+  //   joinTo: { "js/app.js": "src/views/*.pug" }
+  // }
 };
 
-exports.watcher = {
-  usePolling: true
-};
-
-exports.modules = {
-  nameCleaner: path => path.replace(/^src\//, "")
+exports.conventions = {
+  assets: ["src/assets/**/*", "src/views/**/*"]
 };
 
 exports.paths = {
@@ -22,25 +29,45 @@ exports.paths = {
   public: "dist"
 };
 
-exports.conventions = {
-  assets: ["src/assets/**/*", "src/views/**/*"]
+exports.watcher = {
+  usePolling: true
+};
+
+exports.modules = {
+  nameCleaner: path => path.replace(/^src\//, ""),
+  autoRequire: {
+    "js/app.js": ["js/initialize", "js/app"]
+  }
+  // wrapper: false,
+  // definition: false
 };
 
 exports.plugins = {
   sass: {
     sourceMapEmbed: true,
     options: {
-      includePaths: ["node_modules/normalize.css"]
+      includePaths: [
+        "node_modules/normalize.css",
+        "node_modules/modularscale-sass/stylesheets"
+      ]
     }
   },
 
   postcss: {
     processors: [
+      require("cssnext"),
       require("autoprefixer")(["last 8 versions"]),
       require("cssnano")
     ],
     options: {
       parser: require("postcss-scss")
     }
+  }
+};
+
+exports.npm = {
+  enabled: true,
+  globals: {
+    stickybits: "stickybits"
   }
 };
