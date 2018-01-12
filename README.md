@@ -61,7 +61,7 @@ Project/
 >
 > * [Linuxbrew](http://linuxbrew.sh/): `brew install node`
 > * Manually:
->   * (If 16.04 or below:) `curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -`
+>   * (If Ubuntu 16.04 or below:) `curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -`
 >   * `sudo apt-get install -y nodejs`
 >   * `sudo apt-get install -y build-essential`
 
