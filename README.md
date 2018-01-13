@@ -8,6 +8,8 @@
   * [PostCSS](http://postcss.org/)
     * [autoprefixer](https://github.com/postcss/autoprefixer)
     * [cssnano](http://cssnano.co/)
+    * [cssnext](http://cssnext.io/)
+    * [postcss-utilities](https://ismamz.github.io/postcss-utilities/)
     * [postcss-scss](https://github.com/postcss/postcss-scss)
 * [Pug](https://pugjs.org)
 * `src/` instead of `app/`
@@ -61,7 +63,7 @@ Project/
 >
 > * [Linuxbrew](http://linuxbrew.sh/): `brew install node`
 > * Manually:
->   * (If 16.04 or below:) `curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -`
+>   * (If Ubuntu 16.04 or below:) `curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -`
 >   * `sudo apt-get install -y nodejs`
 >   * `sudo apt-get install -y build-essential`
 
