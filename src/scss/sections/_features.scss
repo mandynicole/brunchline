@@ -1,25 +1,15 @@
 [id="features"] {
-  background: linear-gradient(transparent, $theme-secondary, $yellow);
-  background-blend-mode: multiply;
-  mix-blend-mode: multiply;
-  background-size: 300%;
-  color: $white;
+  // background: linear-gradient(scale-color($sea, $lightness: -60%), $marigold);
+  // background-blend-mode: multiply;
+  // mix-blend-mode: multiply;
+  // background-size: 300%;
 
   ul.features {
     @include flex-grid();
     @include list-reset();
 
     * {
-      line-height: 1.5;
-    }
-
-    a {
-      color: $white;
-      text-decoration-color: $yellow;
-
-      &:hover {
-        color: $yellow;
-      }
+      // line-height: 1.5;
     }
 
     li {

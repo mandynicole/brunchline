@@ -1,0 +1,39 @@
+extends templates/_default
+
+block vars
+  - var pageTitle = "Demo"
+  - var bodyClass = "demo"
+
+block content
+  include utils/_lorem-ipsum
+  
+  .content
+    .typography 
+      h1 H1 
+        +lipsum(9, "words")
+        
+      h2 H2 
+        +lipsum(15, "words")
+        
+      h3 H3 
+        +lipsum(21, "words")
+        
+      h4 H4 
+        +lipsum(30, "words")
+
+      h5 H5 
+        +lipsum(45, "words")
+
+      h6 H6
+        +lipsum(60, "words")
+
+      
+      p P 
+        +lipsum(20, "sentences")
+
+      p P 
+        +lipsum(20, "sentences")
+
+
+      
+    .palette

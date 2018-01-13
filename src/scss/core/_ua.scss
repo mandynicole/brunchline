@@ -1,5 +1,4 @@
 html {
-  background: $theme-secondary;
   box-sizing: border-box;
 }
 
@@ -7,24 +6,5 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  line-height: 1.2;
   padding: 0;
-}
-
-body {
-  &::-webkit-scrollbar {
-    appearance: none;
-    background: transparent;
-    position: absolute;
-    width: 15px;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: fade-out($black, 0.09);
-  }
-
-  &::-webkit-scrollbar-track {
-    border: 0;
-    background: fade-out($black, 0.5);
-  }
 }

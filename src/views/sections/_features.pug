@@ -1,31 +1,31 @@
 section#features
-  h2 Features
+  h2.h6 Features
   
   ul.features
     li
-      h3 #[a(href="http://brunch.io/") Brunch] 
+      h3.h5 #[a(href="http://brunch.io/") Brunch] 
       p We're using #[a(href="http://brunch.io/") Brunch] to mitigate the pains of typical front-end build tools and task runners. You can #[a(href="http://brunch.io/docs/why-brunch") read about what that means], but essentially: smaller configs &amp; quicker build times. 
 
     li
-      h3 #[a(href="http://yarnpkg.com/") Yarn]
+      h3.h5 #[a(href="http://yarnpkg.com/") Yarn]
       p Brunch prefers #[a(href="http://yarnpkg.com/") Yarn] for package management as it's smarter &amp; faster than using NPM. If you're making the switch, #[a(href="https://yarnpkg.com/en/docs/migrating-from-npm#toc-cli-commands-comparison") this command comparison list] is very useful.
     
     li
-      h3 #[a(href="https://pugjs.org/") Pug]
+      h3.h5 #[a(href="https://pugjs.org/") Pug]
       p Pug (formerly Jade) is a templating engine that allows us to write clean, intelligent, modular HTML (and a lot of other cool stuff if you're so inclined). 
       
     li
-      h3 #[a(href="http://sass-lang.com/") Sass] + #[a(href="http://postcss.org/") PostCSS]
-      p LibSass with PostCSS' #[code autoprefixer] for vendor prefixing, #[code cssnano] for minification, and #[code cssnext] for futureproofing.
+      h3.h5 #[a(href="http://sass-lang.com/") Sass] + #[a(href="http://postcss.org/") PostCSS]
+      p LibSass with PostCSS' #[code autoprefixer] for vendor prefixing, #[code cssnano] for minification, #[code cssnext] for futureproofing, and #[code postcss-utilities] for various helpers.
       
     li
-      h3 #[a(href="https://github.com/necolas/normalize.css") Normalize.css]
-      p The essential user-agent normalizer.
+      h3.h5 #[a(href="https://github.com/necolas/normalize.css") Normalize], #[a(href="https://dollarshaveclub.github.io/stickybits/") Stickybits] &amp; #[a(href="https://github.com/modularscale/modularscale-sass") Modular Scale]
+      p Normalizer is the essential user-agent normalizer, Stickybits makes #[code position: sticky] more viable, while Modular Scale helps our typography.
       
     li 
-      h3 Mixins, Typography, Palette
-      p Includes helpful defaults and mixins for styling.
+      h3.h5 Auto-generated Styleguide
+      p Just go to #[code /demo.html] to get a simple styleguide.
 
     li
-      h3 Concise Directory
-      p Deviates from Brunch's default structure by removing the #[code app/] folder and having #[code src/] and #[code dist/] (renamed from #[code public/]) at the top level.
+      h3.h5 Concise Directory
+      p Deviates from Brunch's default structure by removing the #[code app/] folder and having #[code src/] and #[code dist/] &mdash; renamed from #[code public/] &mdash; at the top level.

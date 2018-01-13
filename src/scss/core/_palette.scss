@@ -20,5 +20,14 @@ $pink: hsl(333, 69%, 55%);
 
 $link: $blue;
 
-$theme-primary: $white;
-$theme-secondary: $blue;
+$theme-primary: $sea;
+$theme-secondary: $yellow;
+
+$theme-bg: $sea;
+$theme-body: $white;
+$theme-accent: $yellow;
+$theme-text: $gray-d;
+
+.white {
+  color: $white;
+}

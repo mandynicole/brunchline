@@ -1,0 +1,19 @@
+[id="use"] {
+  position: relative;
+
+  nav.os {
+    display: flex;
+    position: sticky;
+    top: $header-h + $header-h/2;
+
+    a {
+      background: $white;
+      display: block;
+      @util border-top-radius(3px);
+      text-decoration: none;
+    }
+  }
+  .os-wrapper {
+    position: absolute;
+  }
+}

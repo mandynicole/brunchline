@@ -1,10 +1,10 @@
 {
-  "name": "brunch-app",
-  "description": "Brunch.io application",
+  "name": "Brunchline",
+  "description": "Brunch for Front-End Designers",
   "private": true,
-  "author": "Brunch",
+  "author": "Mandy McClausky",
   "version": "0.0.1",
-  "repository": "",
+  "repository": "https://github.com/mandymcclausky/brunchline",
   "scripts": {
     "start": "brunch watch --server",
     "build": "brunch build --production"
@@ -15,11 +15,12 @@
     "autoprefixer": "^7.2.1",
     "brunch": "^2",
     "cssnano": "^3.10.0",
-    "cssnext": "^1.8.4",
     "modularscale-sass": "^3.0.4",
     "normalize.css": "^7.0.0",
     "postcss-brunch": "^2.1.0",
+    "postcss-cssnext": "^3.0.2",
     "postcss-scss": "^1.0.2",
+    "postcss-utilities": "^0.7.0",
     "pugjs-brunch": "aMarCruz/pugjs-brunch",
     "sass-brunch": "brunch/sass-brunch",
     "stickybits": "^2.0.13",

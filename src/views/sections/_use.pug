@@ -1,0 +1,64 @@
+section#use 
+  h2.h6 Installation &amp; Usage
+
+  nav.os
+    a(href="#macos") macOS 
+    a(href="#windows") Windows 
+    a(href="#linux") Linux 
+      
+  .os-wrapper
+    section#macos.show
+      h3 macOS 
+      article.node 
+        h4 Install Node.js
+        ul
+          li #[a(href="https://brew.sh/") Homebrew]: #[code brew install node]
+          li Manually: #[a(href="https://nodejs.org/en/download/") Download] the #[code .pkg]
+          
+      article.yarn
+        h4 Install Yarn 
+        ul
+          li #[a(href="https://brew.sh/") Homebrew]: #[code brew install yarn]
+          li (if using a Node Version Manager) #[code brew install yarn --without-node]
+    
+    section#windows.hide
+      h3 Windows
+      article.node 
+        h4 Install Node.js
+        ul
+          li #[a(href="https://brew.sh/") Homebrew]: #[code brew install node]
+          li Manually: #[a(href="https://nodejs.org/en/download/") Download] the #[code .pkg]
+          
+      article.yarn
+        h4 Install Yarn 
+        ul
+          li #[a(href="https://brew.sh/") Homebrew]: #[code brew install yarn]
+          li (if using a Node Version Manager) #[code brew install yarn --without-node]
+          
+    section#linux.hide
+      h3 Linux
+      article.node 
+        h4 Install Node.js
+        ul
+          li #[a(href="https://brew.sh/") Homebrew]: #[code brew install node]
+          li Manually: #[a(href="https://nodejs.org/en/download/") Download] the #[code .pkg]
+          
+      article.yarn
+        h4 Install Yarn 
+        ul
+          li #[a(href="https://brew.sh/") Homebrew]: #[code brew install yarn]
+          li (if using a Node Version Manager) #[code brew install yarn --without-node]
+
+  section#brunch
+    article.brunch 
+      h4 Install Brunch 
+      ul
+        li #[code yarn global add brunch]
+        
+  section#brunchline
+    
+    article.brunchline 
+      h4 Install Brunchline 
+      ol 
+        li #[code git clone https://github.com/mandymcclausky/brunchline.git] or #[a(href="https://github.com/mandymcclausky/brunchline/archive/master.zip") Download] to the folder where you want #[code brunchline/]
+        li #[code yarn install] to install project plugins &amp; dependencies (as defined in #[code package.json]), and create a #[code yarn.lock] file.

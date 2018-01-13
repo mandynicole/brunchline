@@ -38,8 +38,6 @@ exports.modules = {
   autoRequire: {
     "js/app.js": ["js/initialize", "js/app"]
   }
-  // wrapper: false,
-  // definition: false
 };
 
 exports.plugins = {
@@ -55,7 +53,8 @@ exports.plugins = {
 
   postcss: {
     processors: [
-      require("cssnext"),
+      require("postcss-cssnext"),
+      require("postcss-utilities"),
       require("autoprefixer")(["last 8 versions"]),
       require("cssnano")
     ],

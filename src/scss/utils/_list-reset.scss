@@ -1,3 +1,5 @@
+// Use @util reset-list if you don't need params
+
 @mixin list-reset($i: 0, $t: none) {
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
@@ -7,4 +9,3 @@
 
   list-style: $t;
 }
-

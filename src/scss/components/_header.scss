@@ -1,25 +1,27 @@
 $header-h: 60px;
 
 header.primary {
+  @include full-width-bg(transparent);
   height: $header-h;
   display: flex;
+  align-content: center;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 45px;
+  // isolation: isolate;
   position: sticky;
   top: 0;
   width: 100%;
-  z-index: 100;
-
-  transition: 0.3s all ease-in-out;
+  z-index: var(--z-above);
 
   &.js-is-sticky {
-    background: scale-color($theme-secondary, $lightness: -60%);
-    height: $header-h - 15px;
-    transition: 0.3s all ease-in-out;
-
-    &:hover {
-      height: $header-h + 30px;
+    &::before {
+      background: mix($theme-bg, $black);
+      // backdrop-filter: blur(30px);
     }
+
+    // &:hover {
+    //   height: $header-h + 30px; // this is nice but it doesn't play nice with sticky
+    // }
   }
 
   // &::after {

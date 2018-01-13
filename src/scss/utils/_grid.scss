@@ -2,13 +2,14 @@
   display: grid;
 }
 
-@mixin flex-grid($n: 3, $g: 15px) {
+@mixin flex-grid($n: 3, $g: 15px, $mw: 600px) {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 
   > * {
     margin-bottom: $g * 2;
+    max-width: $mw;
     width: calc(100% / #{$n} - #{$g} * (#{$n} - 1));
   }
 }
