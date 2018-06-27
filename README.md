@@ -1,8 +1,10 @@
 # Brunchline
+Brunchline intends to be a designer-friendly front-end tooling framework that takes away the agony that can be setting and spinning up a development environment. tl;dr You should be designing, not architecting and configuring.
 
-#### Brunchline is built with [Brunch](http://brunch.io), and prefers utilizing [Yarn](https://yarnpkg.com/) over NPM.
 
 ## Features
+
+Brunchline is built with [Brunch](http://brunch.io), and prefers utilizing [Yarn](https://yarnpkg.com/) over NPM.
 
 * [SCSS](http://sass-lang.com/)
   * [PostCSS](http://postcss.org/)
