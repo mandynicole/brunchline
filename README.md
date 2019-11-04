@@ -1,3 +1,5 @@
+> NOTE: This project is awaiting features slated for 3.0, which may or may not see the light of day. 
+
 # Brunchline
 Brunchline intends to be a designer-friendly front-end tooling framework that takes away the agony that can be setting and spinning up a development environment. tl;dr You should be designing, not architecting and configuring.
 
