@@ -1,8 +1,8 @@
 
-> NOTE: This project was awaiting features that were slated for 3.0, which wasn't seeming likely even when I put this together. The [Brunch repository](https://github.com/brunch/brunch) was officially archived on June 15, 2023, and with it this little attempt at a starter.
+> NOTE: This project was awaiting features that were slated for 3.0, which never came. The [Brunch repository](https://github.com/brunch/brunch) was officially archived on June 15, 2023, and with it this little idea for a starter.
 
 # Brunchline
-Brunchline intended to be a designer-friendly front-end tooling framework that takes away the agony that can be setting and spinning up a development environment. tl;dr You should be designing, not architecting and configuring.
+Brunchline intended to be a designer-friendly front-end tooling framework that took away the agony that can be setting and spinning up a development environment. tl;dr You should be designing, not architecting and configuring.
 
 
 ## Features
