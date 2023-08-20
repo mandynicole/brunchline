@@ -1,13 +1,12 @@
 
-> The [Brunch repository](https://github.com/brunch/brunch) was officially archived on June 15, 2023, and with it, this little idea for a starter. Thankfully most, if not all, of the goals in this project could be replicated in 11ty or Astro.
+> The [Brunch repository](https://github.com/brunch/brunch) was officially archived on June 15, 2023, and so too, this little idea for a starter. Thankfully most, if not all, of the goals in this project can be replicated in 11ty or Astro with a much more modern toolset.
 
 # Brunchline
-Brunchline intended to be a designer-friendly front-end tooling framework that took away the agony that can be setting and spinning up a development environment. tl;dr You should be designing, not architecting and configuring.
+Brunchline once intended to be a designer-friendly front-end tooling framework that took away the agony that can be setting and spinning up a development environment. tl;dr You should be designing, not architecting and configuring. I'd even made a rough [landing page](https://brunchline-proto-landing.netlify.app/) for it.
 
-> NOTE: This project was awaiting features that were slated for 3.0, which never came. 
+> NOTE: This project was awaiting features that were slated for 3.0, which never came.
 
 ## Features
-
 Brunchline is built with [Brunch](http://brunch.io), and prefers utilizing [Yarn](https://yarnpkg.com/) over NPM.
 
 * [SCSS](http://sass-lang.com/)
